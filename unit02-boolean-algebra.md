@@ -92,10 +92,10 @@ $$
 
 |$A\quad B$|$A^\prime$|$A^\prime B$|$(A^\prime B)^\prime$|
 |-|-|-|-|
-|0$\quad$ 0|1|0|1|
-|0$\quad$ 1|1|1|0|
-|1$\quad$ 0|0|0|1|
-|1$\quad$ 1|0|0|1|
+|0 $\quad$ 0|1|0|1|
+|0 $\quad$ 1|1|1|0|
+|1 $\quad$ 0|0|0|1|
+|1 $\quad$ 1|0|0|1|
 
 #### e
 
@@ -103,14 +103,14 @@ $$
 
 |$A\quad B\quad C$|$B^\prime$|$A+B^\prime$|$C(A+B\prime)$|
 |-|-|-|-|
-|0$\quad$ 0$\quad$ 0|1|1|0|
-|0$\quad$ 0$\quad$ 1|1|1|1|
-|0$\quad$ 1$\quad$ 0|0|0|0|
-|0$\quad$ 1$\quad$ 1|0|0|0|
-|1$\quad$ 0$\quad$ 0|1|1|0|
-|1$\quad$ 0$\quad$ 1|1|1|1|
-|1$\quad$ 1$\quad$ 0|0|1|0|
-|1$\quad$ 1$\quad$ 1|0|1|1|
+|0 $\quad$ 0 $\quad$ 0|1|1|0|
+|0 $\quad$ 0 $\quad$ 1|1|1|1|
+|0 $\quad$ 1 $\quad$ 0|0|0|0|
+|0 $\quad$ 1 $\quad$ 1|0|0|0|
+|1 $\quad$ 0 $\quad$ 0|1|1|0|
+|1 $\quad$ 0 $\quad$ 1|1|1|1|
+|1 $\quad$ 1 $\quad$ 0|0|1|0|
+|1 $\quad$ 1 $\quad$ 1|0|1|1|
 
 #### f
 
@@ -124,13 +124,13 @@ $$
 X + 0 = X
 $$
 
-- If $X = 0$, $0 + 0 = 0, and if $X = 1$, $1 + 0 = 1$
+- If $X = 0$, $0 + 0 = 0$, and if $X = 1$, $1 + 0 = 1$
 
 $$
 X + 1 = 1
 $$
 
-- If $X = 0$, $0 + 1 = 1, and if $X = 1$, $1 + 1 = 1$
+- If $X = 0$, $0 + 1 = 1$, and if $X = 1$, $1 + 1 = 1$
 
 #### b
 
@@ -171,7 +171,7 @@ $$
 - $XX = X$
 
 $$
-X(Y^\prime + Z) + [X(Y^\prime+Z)]^\prime=1
+X(Y^\prime + Z) + \[X(Y^\prime+Z)\]^\prime=1
 $$
 
 - $X + X^\prime = 1$
@@ -220,14 +220,14 @@ $$
 
 |$X\quad Y\quad Z$|$Y + Z$|$XY$|$XZ$|$X(Y+Z)$|$XY+XZ$|
 |-|-|-|-|-|-|
-|0$\quad$ 0$\quad$ 0|0|0|0|0|0|
-|0$\quad$ 0$\quad$ 1|1|0|0|0|0|
-|0$\quad$ 1$\quad$ 0|1|0|0|0|0|
-|0$\quad$ 1$\quad$ 1|1|0|0|0|0|
-|1$\quad$ 0$\quad$ 0|0|0|0|0|0|
-|1$\quad$ 0$\quad$ 1|1|0|1|1|1|
-|1$\quad$ 1$\quad$ 0|1|1|0|1|1|
-|1$\quad$ 1$\quad$ 1|1|1|1|1|1|
+|0 $\quad$ 0 $\quad$ 0|0|0|0|0|0|
+|0 $\quad$ 0 $\quad$ 1|1|0|0|0|0|
+|0 $\quad$ 1 $\quad$ 0|1|0|0|0|0|
+|0 $\quad$ 1 $\quad$ 1|1|0|0|0|0|
+|1 $\quad$ 0 $\quad$ 0|0|0|0|0|0|
+|1 $\quad$ 0 $\quad$ 1|1|0|1|1|1|
+|1 $\quad$ 1 $\quad$ 0|1|1|0|1|1|
+|1 $\quad$ 1 $\quad$ 1|1|1|1|1|1|
 
 #### f
 
@@ -249,10 +249,10 @@ $$
 
 |$X\quad Y$|$XY^\prime$|$XY^\prime + Y$|$X + Y$|
 |-|-|-|-|
-|0$\quad$ 0|0|0|0|
-|0$\quad$ 1|0|1|1|
-|1$\quad$ 0|1|1|1|
-|1$\quad$ 1|0|1|1|
+|0 $\quad$ 0|0|0|0|
+|0 $\quad$ 1|0|1|1|
+|1 $\quad$ 0|1|1|1|
+|1 $\quad$ 1|0|1|1|
 
 #### b
 
@@ -414,7 +414,7 @@ $$
 
 $$
 \begin{aligned}
-[a(b^\prime + c^\prime d)]^\prime
+\[a(b^\prime + c^\prime d)\]^\prime
 &= a^\prime + (b^\prime + c^\prime d)^\prime \\
 &= a^\prime + b(c^\prime d)^\prime \\
 &= a^\prime + b(c + d^\prime)
@@ -474,14 +474,14 @@ $$
 
 |$a\quad b\quad c$|$a^\prime b$|$b^\prime c$|$a^\prime b + b^\prime c$|$(a + b^\prime)$|$(b + c^\prime)$|$F^\prime$|
 |-|-|-|-|-|-|-|
-|0$\quad$ 0$\quad$ 0|0|0|0|1|1|1|
-|0$\quad$ 0$\quad$ 1|0|1|1|1|0|0|
-|0$\quad$ 1$\quad$ 0|1|0|1|0|1|0|
-|0$\quad$ 1$\quad$ 1|1|0|1|0|1|0|
-|1$\quad$ 0$\quad$ 0|0|0|0|1|1|1|
-|1$\quad$ 0$\quad$ 1|0|1|1|1|0|0|
-|1$\quad$ 1$\quad$ 0|0|0|0|1|1|1|
-|1$\quad$ 1$\quad$ 1|0|0|0|1|1|1|
+|0 $\quad$ 0 $\quad$ 0|0|0|0|1|1|1|
+|0 $\quad$ 0 $\quad$ 1|0|1|1|1|0|0|
+|0 $\quad$ 1 $\quad$ 0|1|0|1|0|1|0|
+|0 $\quad$ 1 $\quad$ 1|1|0|1|0|1|0|
+|1 $\quad$ 0 $\quad$ 0|0|0|0|1|1|1|
+|1 $\quad$ 0 $\quad$ 1|0|1|1|1|0|0|
+|1 $\quad$ 1 $\quad$ 0|0|0|0|1|1|1|
+|1 $\quad$ 1 $\quad$ 1|0|0|0|1|1|1|
 
 ### 13
 
@@ -744,7 +744,7 @@ $$
 
 $$
 \begin{aligned}
-[(AB)^\prime + C^\prime D]^\prime
+\[(AB)^\prime + C^\prime D\]^\prime
 &= AB(C^\prime D)^\prime \\
 &= AB(C + D^\prime)
 \end{aligned}
@@ -754,7 +754,7 @@ $$
 
 $$
 \begin{aligned}
-[A + B(C^\prime + D)]^\prime
+\[A + B(C^\prime + D)\]^\prime
 &= A^\prime(B(C^\prime + D))^\prime \\
 &= A^\prime(B^\prime + (C^\prime + D)^\prime) \\
 &= A^\prime(B^\prime + CD^\prime) \\
