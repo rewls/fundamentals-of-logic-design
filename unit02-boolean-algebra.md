@@ -50,7 +50,7 @@
 
 - $1 + 1 = 1$
 
-- $1 \cdot 0 = 1$
+- $1 \cdot 0 = 0$
 
 - $1 + 0 = 1$
 
@@ -306,15 +306,15 @@ $$
 
 - $AB^\prime + D^\prime EF^\prime + G$: SOP
 
-- $(A + B^\prime C^\prime)(A^\prime + BC)$: None
+- $(A + B^\prime C^\prime)(A^\prime + BC)$: Neither
 
 - $AB^\prime(C^\prime + D + E^\prime)(F^\prime + G)$: POS
 
-- $X^\prime Y + WX(X^\prime + Z) + A^\prime B^\prime C^\prime$: None
+- $X^\prime Y + WX(X^\prime + Z) + A^\prime B^\prime C^\prime$: Neither
 
 #### b
 
-- If we apply the second distributive law before the ordinary distributive law, we can save a lotof time.
+- If we apply the second distributive law before the ordinary distributive law, we can save a lot of time.
 
 #### c
 
@@ -374,10 +374,21 @@ $$
 \begin{aligned}
 &C^\prime DE + AD^\prime B^\prime CE \\
 &= E(C^\prime D + AD^\prime B^\prime C) \\
-&= E(C^\prime D + D^\prime B^\prime D + AD^\prime B^\prime C + ACC^\prime) \\
-&= E(D(C^\prime + D^\prime B^\prime) + AC(C^\prime + D^\prime B^\prime)) \\
-&= E(C^\prime + D^\prime B^\prime)(D + AC) \\
-&= E(C^\prime + D^\prime)(C^\prime + B^\prime)(D + A)(D + C)
+&= E(C^\prime D + ADD^\prime + AD^\prime B^\prime C + B^\prime CC^\prime) \\
+&= E((D(C^\prime + AD^\prime) + B^\prime C(C^\prime + AD^\prime)) \\
+&= E(C^\prime + AD^\prime)(D  + B^\prime C) \\
+&= E(C^\prime + A)(C^\prime + D^\prime)(D + B^\prime)(D + C) \\
+\end{aligned}
+$$
+
+- Using $(X + Y)(X^\prime + Z) = XZ + YX^\prime$
+
+$$
+\begin{aligned}
+&C^\prime DE + AD^\prime B^\prime CE \\
+&= E(C^\prime D + AD^\prime B^\prime C) \\
+&= E(C^\prime D + AC)(C^\prime D + D^\prime B^\prime) \\
+&= E(C + D)(C^\prime + A)(D + B^\prime)(D^\prime + C^\prime)
 \end{aligned}
 $$
 
@@ -583,25 +594,25 @@ $$
 
 - $ACF + AC^\prime F = AF$
 
-- $XY + XY^\prime = X$
+- $XY + XY^\prime = X$ (Uniting)
 
 #### d
 
 - $A(C + D^\prime B) + A^\prime = C + D^\prime B + A^\prime$
 
-- $X + X^\prime Y = X + Y$
+- $X + X^\prime Y = X + Y$ (Elimination)
 
 #### e
 
 - $(A^\prime B + C + D)(A^\prime B + D) = A^\prime B + D$
 
-- $X(X + Y) = X$
+- $X(X + Y) = X$ (Absorption)
 
 #### f
 
 - $(A + BC) + (DE + F)(A + BC)^\prime = A + BC + DE + F$
 
-- $X + X^\prime Y$
+- $X + X^\prime Y = X + Y$ (Elimination)
 
 ### 2.4
 
@@ -611,7 +622,7 @@ $$
 \begin{aligned}
 F
 &= ((A\cdot1 + A\cdot1) + E) + (BC)D \\
-&= AE + BCD
+&= A + E + BCD
 \end{aligned}
 $$
 
@@ -643,8 +654,9 @@ $$
 \begin{aligned}
 &(A^\prime + B + C^\prime)(A^\prime + C^\prime + D)(B^\prime + D^\prime) \\
 &= (A^\prime + C^\prime + BD)(B^\prime + D^\prime) \\
-&=(A^\prime + C^\prime  + BD)BD \\
-&= BD
+&= (A^\prime + C^\prime)(B^\prime + D^\prime) \\
+&= (A^\prime + C^\prime)B^\prime + (A^\prime + C^\prime)D^\prime \\
+&= A^\prime B^\prime + C^\prime B^\prime + A^\prime D^\prime + C^\prime D^\prime
 \end{aligned}
 $$
 
@@ -701,9 +713,8 @@ $$
 &ACD^\prime + C^\prime D^\prime + A^\prime C \\
 &= D^\prime(AC + C^\prime) + A^\prime C \\
 &= D^\prime(A + C^\prime) + A^\prime C \\
-&= (D + A^\prime C)(A+ C^\prime + A^\prime C) \\
-&= (D + A^\prime)(D + C)(A + C + C^\prime) \\
-&= (D + A^\prime)(D + C)
+&= (D^\prime + A^\prime C)(A+ C^\prime + A^\prime C) \\
+&= (D^\prime + A^\prime)(D^\prime + C)
 \end{aligned}
 $$
 
@@ -746,7 +757,8 @@ $$
 \begin{aligned}
 ((AB)^\prime + C^\prime D)^\prime
 &= AB(C^\prime D)^\prime \\
-&= AB(C + D^\prime)
+&= AB(C + D^\prime) \\
+&= ABC + ABD^\prime
 \end{aligned}
 $$
 
@@ -758,7 +770,7 @@ $$
 &= A^\prime(B(C^\prime + D))^\prime \\
 &= A^\prime(B^\prime + (C^\prime + D)^\prime) \\
 &= A^\prime(B^\prime + CD^\prime) \\
-&= A^\prime(B^\prime + C)(B^\prime + D^\prime)
+&= A^\prime B^\prime + A^\prime CD^\prime
 \end{aligned}
 $$
 
@@ -795,6 +807,6 @@ G
 &= (((R + S + T)^\prime P((R + S)^\prime + T))^\prime T)^\prime \\
 &= (R + S + T)^\prime P((R + S)^\prime + T) + T^\prime \\
 &= R^\prime S^\prime T^\prime P (R^\prime S^\prime + T) + T^\prime \\
-&= R^\prime S^\prime T^\prime P + T^\prime
+&= T^\prime
 \end{aligned}
 $$
