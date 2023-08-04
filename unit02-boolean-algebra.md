@@ -171,7 +171,7 @@ $$
 - $XX = X$
 
 $$
-X(Y^\prime + Z) + \[X(Y^\prime+Z)\]^\prime=1
+X(Y^\prime + Z) + (X(Y^\prime+Z))^\prime=1
 $$
 
 - $X + X^\prime = 1$
@@ -414,7 +414,7 @@ $$
 
 $$
 \begin{aligned}
-\[a(b^\prime + c^\prime d)\]^\prime
+(a(b^\prime + c^\prime d))^\prime
 &= a^\prime + (b^\prime + c^\prime d)^\prime \\
 &= a^\prime + b(c^\prime d)^\prime \\
 &= a^\prime + b(c + d^\prime)
@@ -744,7 +744,7 @@ $$
 
 $$
 \begin{aligned}
-\[(AB)^\prime + C^\prime D\]^\prime
+((AB)^\prime + C^\prime D)^\prime
 &= AB(C^\prime D)^\prime \\
 &= AB(C + D^\prime)
 \end{aligned}
@@ -754,7 +754,7 @@ $$
 
 $$
 \begin{aligned}
-\[A + B(C^\prime + D)\]^\prime
+(A + B(C^\prime + D))^\prime
 &= A^\prime(B(C^\prime + D))^\prime \\
 &= A^\prime(B^\prime + (C^\prime + D)^\prime) \\
 &= A^\prime(B^\prime + CD^\prime) \\
